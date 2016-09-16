@@ -6,7 +6,7 @@ var index = require('./routes/index');
 var todos = require('./routes/todos');
 
 var app = express();
-
+var port = process.env.PORT || 3000
 //View Engine 
 
 app.set('views', path.join(__dirname, 'views'));
@@ -21,6 +21,6 @@ app.use(express.static(path.join(__dirname, 'client')));
 app.use('/', index);
 app.use('/api/v1', todos);
 
-app.listen(3000, function(){
+app.listen(port, function(){
     console.log('Server Started');
 })
