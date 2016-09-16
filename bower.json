@@ -1,0 +1,20 @@
+{
+  "name": "todo_web_app",
+  "description": "Application to perform CRUD operation using MangoDB",
+  "main": "server.js",
+  "authors": [
+    "Rajat Palod"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
