@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var todo_component_1 = require('./components/todo.component');
+var todo_service_1 = require('./services/todo.service');
 var AppComponent = (function () {
     function AppComponent() {
     }
@@ -18,7 +18,7 @@ var AppComponent = (function () {
             moduleId: module.id,
             selector: 'my-app',
             templateUrl: 'app.component.html',
-            directives: [todo_component_1.TodoComponent]
+            providers: [todo_service_1.TodoService]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
