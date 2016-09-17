@@ -35,6 +35,7 @@ var TodoComponent = (function () {
                 _this.todos.push(newTodo);
                 todoText.value = '';
             });
+            this.ngOnInit();
         }
     };
     TodoComponent.prototype.updateStatus = function (todo) {

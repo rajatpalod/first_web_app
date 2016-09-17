@@ -31,10 +31,11 @@ addToDo($event, todoText){
       };
       
       result = this._todoService.saveTodo(newTodo);
-      result.subscribe(x => {
-        this.todos.push(newTodo)
+       result.subscribe(x => {
+       this.todos.push(newTodo)
         todoText.value = '';
       })
+      this.ngOnInit();
     }
   }
   
